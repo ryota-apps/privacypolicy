@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プライバシーポリシー｜麻雀成績集計</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #1a1208;
+  --paper: #f5f0e8;
+  --cream: #faf7f0;
+  --gold: #b8860b;
+  --teal: #2c7873;
+  --red: #c0392b;
+  --sh: rgba(26,18,8,0.12);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Noto Serif JP', serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.9;
+  font-size: 15px;
+}
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background:
+    repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(26,18,8,0.04) 39px, rgba(26,18,8,0.04) 40px),
+    repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(26,18,8,0.02) 39px, rgba(26,18,8,0.02) 40px);
+  pointer-events: none; z-index: 0;
+}
+.wrap {
+  position: relative; z-index: 1;
+  max-width: 720px; margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+.page-header {
+  text-align: center;
+  padding-bottom: 28px;
+  border-bottom: 2px solid var(--ink);
+  margin-bottom: 40px;
+}
+.page-header::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: var(--ink);
+  margin-top: 4px;
+}
+.app-name {
+  font-size: 0.8rem;
+  letter-spacing: 0.4em;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.page-title {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  margin-bottom: 8px;
+}
+.page-date {
+  font-size: 0.75rem;
+  color: #999;
+  letter-spacing: 0.1em;
+}
+.section {
+  background: var(--cream);
+  border: 1px solid rgba(26,18,8,0.14);
+  border-radius: 2px;
+  padding: 24px 28px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 0 var(--sh);
+}
+.section-title {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(26,18,8,0.1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section-title::before {
+  content: '✦';
+  color: var(--gold);
+  font-size: 0.72rem;
+}
+.section p {
+  font-size: 0.88rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+.section p:last-child { margin-bottom: 0; }
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+.section ul li {
+  font-size: 0.88rem;
+  color: #333;
+  padding: 6px 0 6px 18px;
+  border-bottom: 1px solid rgba(26,18,8,0.06);
+  position: relative;
+}
+.section ul li:last-child { border-bottom: none; }
+.section ul li::before {
+  content: '・';
+  position: absolute; left: 0;
+  color: var(--gold);
+}
+.highlight {
+  background: rgba(44,120,115,0.07);
+  border-left: 3px solid var(--teal);
+  padding: 12px 16px;
+  border-radius: 0 2px 2px 0;
+  margin: 12px 0;
+  font-size: 0.85rem;
+  color: var(--teal);
+  font-weight: 500;
+}
+.warning {
+  background: rgba(192,57,43,0.06);
+  border-left: 3px solid var(--red);
+  padding: 12px 16px;
+  border-radius: 0 2px 2px 0;
+  margin: 12px 0;
+  font-size: 0.85rem;
+  color: var(--red);
+}
+.contact-box {
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 2px;
+  padding: 20px 24px;
+  margin-top: 8px;
+}
+.contact-box p {
+  font-size: 0.85rem;
+  color: rgba(245,240,232,0.8) !important;
+  margin-bottom: 8px;
+}
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(26,18,8,0.12);
+  font-size: 0.72rem;
+  color: #bbb;
+  letter-spacing: 0.1em;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="page-header">
+    <div class="app-name">🀄 麻雀成績集計</div>
+    <div class="page-title">プライバシーポリシー</div>
+    <div class="page-date">制定日：2026年3月8日</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">はじめに</div>
+    <p>「麻雀成績集計」（以下「本アプリ」）は、フリー雀荘での麻雀成績・収支を記録・管理するためのアプリケーションです。</p>
+    <p>本アプリの開発者（以下「当方」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。本ポリシーは、本アプリにおける情報の取り扱いについて説明するものです。</p>
+    <p>本アプリをご利用いただくことで、本プライバシーポリシーの内容にご同意いただいたものとみなします。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">適用範囲</div>
+    <p>本ポリシーは、本アプリ（Android版）にのみ適用されます。本アプリ内に外部サービスへのリンクが含まれる場合、リンク先のプライバシーポリシーは各サービスに準じるものとし、当方は一切の責任を負いません。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">収集する情報について</div>
+    <div class="highlight">本アプリは、個人を特定できる情報を一切収集しません。</div>
+    <p>本アプリで入力・記録されるデータはすべてお使いの端末内にのみ保存され、外部サーバーへの送信は行いません。</p>
+    <ul>
+      <li>氏名・メールアドレス・電話番号などの個人情報：収集しない</li>
+      <li>位置情報：収集しない</li>
+      <li>端末の識別情報：収集しない</li>
+      <li>アプリの使用状況・行動履歴：収集しない</li>
+      <li>入力されたゲームデータ・収支データ：端末内にのみ保存</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">データの保存と削除について</div>
+    <p>本アプリで入力したすべてのデータは、ユーザーの端末内（ローカルストレージ）にのみ保存されます。</p>
+    <ul>
+      <li>データは端末の外部に送信・共有されることはありません</li>
+      <li>ユーザーはいつでもアプリ内の機能からデータを削除できます</li>
+      <li>アプリをアンインストールすると、保存されたデータはすべて削除されます</li>
+      <li>機種変更の際はアプリ内のエクスポート機能でデータをバックアップしてください</li>
+    </ul>
+    <div class="warning">
+      ⚠️ アンインストールやアプリデータの削除により失われたデータの復元は、当方では対応できません。定期的なエクスポートをお勧めします。
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">第三者への情報提供</div>
+    <p>当方は、以下の場合を除き、いかなる第三者にも情報を提供しません。</p>
+    <ul>
+      <li>法令に基づく開示が必要な場合</li>
+      <li>ユーザーご本人の同意がある場合</li>
+    </ul>
+    <p>なお、本アプリは個人情報を収集していないため、実質的に第三者への情報提供は発生しません。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">広告・解析ツールについて</div>
+    <div class="highlight">本アプリは広告を表示せず、解析ツールも使用していません。</div>
+    <p>Google Analytics・Firebase等のトラッキングサービスは一切使用しておりません。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">未成年者の利用について</div>
+    <p>本アプリは麻雀の成績管理を目的としたアプリです。13歳未満のお子様を対象としておらず、意図的に13歳未満のお子様から情報を収集することはありません。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">免責事項</div>
+    <p>当方は、本アプリの利用に関して以下の事項について責任を負いません。</p>
+    <ul>
+      <li>アプリの不具合・障害によるデータの損失</li>
+      <li>端末の故障・初期化・アンインストールによるデータの消失</li>
+      <li>OSのアップデートによるアプリの動作不良</li>
+      <li>本アプリの利用により生じた損害（直接的・間接的を問わず）</li>
+    </ul>
+    <p>本アプリは現状有姿で提供されるものであり、当方は明示または黙示を問わず、本アプリの完全性・正確性・有用性について保証しません。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">プライバシーポリシーの変更について</div>
+    <p>当方は、必要に応じて本ポリシーを改定することがあります。改定した場合は、本ページにて最新版を公開し、制定日を更新します。重要な変更がある場合は、アプリ内でお知らせします。</p>
+    <p>改定後も継続してご利用いただくことで、改定後のポリシーに同意いただいたものとみなします。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">準拠法・管轄裁判所</div>
+    <p>本ポリシーは日本法に準拠するものとします。本アプリの利用に関して紛争が生じた場合、当方の所在地を管轄する日本の裁判所を専属的合意管轄とします。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">お問い合わせ</div>
+    <p>本プライバシーポリシーに関するご質問・ご意見は、Google Playストアのレビュー欄またはアプリ内フィードバック機能よりお問い合わせください。</p>
+    <div class="contact-box">
+      <p>開発者：Ryota</p>
+      <p>お問い合わせ方法：Google Playレビュー欄 またはアプリ内フィードバック</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 麻雀成績集計　All Rights Reserved.
+  </footer>
+
+</div>
+</body>
+</html>
